@@ -1,22 +1,22 @@
 {
-  "name": "library-main",
+  "name": "mongoose_server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "nodemon -r dotenv/config src/server.js"
+    "start": "node api/src/server.js",
+    "dev": "nodemon -r dotenv/config api/src/server.js",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.1",
-    "mongoose": "^8.2.3"
-  },
-  "devDependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "mongoose": "^8.2.2",
     "nodemon": "^3.1.0"
   }
 }
